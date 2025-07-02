@@ -49,12 +49,12 @@ try {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'andresfelipealmario2309@gmail.com'; 
+            $mail->Username = 'anggienayaperdomo2@gmail.com'; 
             $mail->Password = 'dbmu jcrn tiev yony'; 
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
-            $mail->setFrom('andresfelipealmario2309@gmail.com', 'Administrador');
+            $mail->setFrom('anggieanayaperdomo2@gmail.com', 'Administrador');
             $mail->addAddress($correo);
 
             $url = "http://localhost/tractorss/auth/reset_password.php?token=$token";
